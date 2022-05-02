@@ -1,0 +1,84 @@
+body {
+    background:linear-gradient(to bottom right, white, #ffbd80);
+    font-family: 'Montserrat', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav > a {
+    text-decoration: none;
+    font-size: 200%;
+    font-weight: 125%;
+    color: black;
+    margin: 1.5em;
+    padding: .5em;
+}
+nav > a:hover {
+    color: gray;
+}
+h1 {
+    text-align: center;
+    font-size: 400%;
+}
+main {
+    margin-bottom: 25em;
+    margin-left: 25em;
+    margin-right: 25em;
+}
+p {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+    font-weight: bold;
+}			
+.name {
+    float: left;
+    width: 70%;
+    text-align: center;
+}
+.contact {
+    float: right;
+    width: 29%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-left: 1px solid gray;
+    text-align: right;
+}
+.experience {
+    width: 70%;
+    float: left;
+}
+.jobTitle, address{
+    display: inline-block;
+}
+time {
+    display: block;
+    font-size: 90%;
+}
+.experience > ul > li, .education > ul > li, .projects > ul > li {
+    margin-bottom: 1em;
+}
+.education {
+    float: left;
+}
+.projects {
+    float: left;
+}
+.skills {
+    float: right;
+    width: 29%;
+} 
+.jobDescription {
+    margin-left: 1em;
+}
+.schoolName, .jobTitle, address, .projectName {
+    font-weight: bold;
+}
+.headerList {
+    list-style-type: none;
+}
+.subList {
+    list-style-type: disc;
+}

@@ -1,0 +1,52 @@
+body {
+    background:linear-gradient(to bottom right, white, #ffbd80);
+    font-family: 'Montserrat', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav > a {
+    text-decoration: none;
+    font-size: 200%;
+    font-weight: 125%;
+    color: black;
+    margin: 1.5em;
+    padding: .5em;
+}
+nav > a:hover {
+    color: gray;
+}
+h1 {
+    text-align: center;
+    font-size: 400%;
+}
+main {
+    margin-bottom: 25em;
+    margin-left: 25em;
+    margin-right: 25em;
+}
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 200%;
+}
+.center {
+    text-align: center;
+}
+.selected {
+    border-bottom: 1px solid rgb(255, 105, 56);
+}
+iframe {
+    border-radius:12px;
+    width: 100%;
+}
+.sciframe {
+    height: 120px;
+}
+.spiframe {
+    height: 80px;
+}
+#hobbies, #resume {
+    text-align: center;
+}
