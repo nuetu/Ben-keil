@@ -26,7 +26,7 @@ main {
     margin-left: 25em;
     margin-right: 25em;
 }
-p {
+main > p {
     text-align: justify;
     text-justify: inter-word;
     font-size: 200%;
@@ -49,4 +49,11 @@ iframe {
 }
 #hobbies, #resume {
     text-align: center;
+}
+.footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 150%;
 }
