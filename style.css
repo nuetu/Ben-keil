@@ -6,6 +6,38 @@ body {
   background: #fefefe;
   font-family: "Times New Roman", Times, serif;
 }
-#index {
-  font-size: 2em;
+h1 {
+  font-size: 8vw;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 6vw;
+  font-style: italic;
+  color: #444444;
+}
+#home {
+  font-size: 2vw;
+}
+nav {
+  font-size: 2vw;
+}
+main {
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 12vw;
+  }
+  h2 {
+    font-size: 12vw;
+  }
+  .footer {
+    font-size: 2em;
+  }
+  nav {
+    font-size: 6vw;
+  }
+  #home {
+    font-size: 8vw;
+  }
 }
