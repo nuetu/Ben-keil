@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Connect | Benjamin B. Keil</title>
+    <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -9,6 +10,16 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
       rel="stylesheet"
     />
+    <script>
+      function email() {
+        window.alert("My Email can be found on the PDF Download of my Resume");
+      }
+      function phone() {
+        window.alert(
+          "My Phone Number can be found on the PDF Download of my Resume"
+        );
+      }
+    </script>
   </head>
   <body>
     <nav>
@@ -19,30 +30,15 @@
     </nav>
     <h1>Connect</h1>
     <main id="connect">
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/ben-keil-usa/"
-          >linkedin.com/in/ben-keil-usa/</a
-        >
-      </p>
-      <p>
-        Email: My personal email is included in the PDF Download of my resume.
-      </p>
-      <p>
-        Phone: My personal cell phone number is included in the PDF Download of
-        my resume.
-      </p>
-      <p>
-        Spotify:
-        <a
-          href="https://open.spotify.com/artist/79hoKvAUv3859srcZTLFSL?si=QIf_3b2DT9uwVEE5yDjVaw"
-          >Spotify</a
-        >
-      </p>
-      <p>
-        SoundCloud:
-        <a href="https://soundcloud.com/bennkeil">soundcloud.com/bennkeil</a>
-      </p>
+      <a href="https://www.linkedin.com/in/ben-keil-usa/">LinkedIn</a>
+      <a href="" onclick="email()">Email</a>
+      <a href="" onclick="phone()">Phone</a>
+      <a
+        href="https://open.spotify.com/artist/79hoKvAUv3859srcZTLFSL?si=QIf_3b2DT9uwVEE5yDjVaw"
+        >Spotify</a
+      >
+      <a href="https://soundcloud.com/bennkeil">SoundCloud</a>
+      <a href="https://www.last.fm/user/Nuetu">Last.fm</a>
     </main>
     <div class="footer">
       <p>Ben Keil &middot; 2023</p>

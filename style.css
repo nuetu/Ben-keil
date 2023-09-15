@@ -6,38 +6,61 @@ body {
   background: #fefefe;
   font-family: "Times New Roman", Times, serif;
 }
-h1 {
-  font-size: 8vw;
-  margin-bottom: 0;
-}
-h2 {
+
+nav {
   font-size: 6vw;
-  font-style: italic;
-  color: #444444;
+  margin-top: 3vw;
 }
 #home {
-  font-size: 2vw;
-}
-nav {
-  font-size: 2vw;
+  font-size: 8vw;
 }
 main {
   margin-bottom: 2rem;
 }
-@media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 12vw;
-  }
-  h2 {
-    font-size: 12vw;
-  }
-  .footer {
-    font-size: 2em;
+.footer {
+  font-size: 2em;
+}
+h1 {
+  font-size: 12vw;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 12vw;
+  font-style: italic;
+  color: #444444;
+}
+#connect {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+#connect > a {
+  padding: 3vw;
+  font-size: 6vw;
+  text-align: center;
+}
+#projects > ul {
+  list-style-position: inside;
+  padding-left: 0;
+  font-size: 5vw;
+}
+@media (min-width: 768px) {
+  #home {
+    font-size: 2vw;
   }
   nav {
+    font-size: 2vw;
+  }
+  h1 {
+    font-size: 6.5vw;
+  }
+  h2 {
     font-size: 6vw;
   }
-  #home {
-    font-size: 8vw;
+  #connect > a {
+    font-size: 4vw;
+  }
+  #projects > ul {
+    font-size: 3vw;
   }
 }
