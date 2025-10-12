@@ -112,11 +112,11 @@ nav {
 }
 
 /* Alternate background colors for sections */
-.section:nth-child(odd) {
+.section:nth-child(even) {
   background-color: #2a2a2a;
 }
 
-.section:nth-child(even) {
+.section:nth-child(odd) {
   background-color: #1e1e1e;
 }
 
@@ -180,6 +180,13 @@ footer {
   color: #bbb;
 }
 
+img {
+  box-shadow: 0 25px 50px -12px #4a4a4a;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  width: 100%;
+}
+
 /* ===== Responsive Layout ===== */
 @media (max-width: 768px) {
   /* Hamburger aligned to the right */
@@ -237,8 +244,3 @@ footer {
   }
 }
 
-img {
-  box-shadow: 0 25px 50px -12px #4a4a4a;
-  border: 1px solid #fff;
-  border-radius: 20px;
-}
