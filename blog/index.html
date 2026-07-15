@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Ben Keil</title>
+  <meta name="description" content="Articles about startups, credit cards, software development, and MBA life." />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- Skip Link for Screen Readers -->
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="/" style="text-decoration: none; color: inherit;">Ben Keil</a>
+      </h1>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Toggle navigation menu"
+        aria-controls="nav-menu"
+        aria-expanded="false">
+        &#9776;
+      </button>
+
+      <nav id="nav-menu" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#projects">Projects</a></li>
+          <li><a href="/#contact">Contact</a></li>
+          <li><a href="/blog" aria-current="page">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="section hero" style="padding-top: 0;">
+      <div class="content">
+        <h2>Blog</h2>
+        <p>Thoughts on startups, software, finance, coffee, and whatever else I'm learning.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="s-container">
+
+        <article class="blog-preview">
+          <h3>
+            <a href="building-credit-card-cafe.html">
+              Day One
+            </a>
+          </h3>
+
+          <p class="post-meta">
+            July 16, 2026
+          </p>
+
+          <p>
+            I tried writing a blog when I was 14 and it failed miserably.<br>That isn‘t the whole truth, however. I built a static html website and hosted it on some free hosting service, and added a few posts that were no longer than a tweet. No metrics on viewership and no consistency on content, it was mostly nonsense. I had no reason for making this besides a common dream shared by 14-year olds: to be famous. But certainly not to...
+          </p>
+
+          <p>
+            <a href="day-one.html">Read more →</a>
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2026 Benjamin Keil. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !expanded);
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
