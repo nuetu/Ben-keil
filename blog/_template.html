@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- TITLE: keep the " | Ben Keil" suffix -->
+  <title>POST TITLE | Ben Keil</title>
+  <!-- DESCRIPTION: one real sentence. This is what shows in search results and link previews. -->
+  <meta name="description" content="One-sentence summary of the post." />
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- Skip Link for Screen Readers -->
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="/" style="text-decoration: none; color: inherit;">
+          Ben Keil
+        </a>
+      </h1>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Toggle navigation menu"
+        aria-controls="nav-menu"
+        aria-expanded="false">
+        &#9776;
+      </button>
+
+      <nav id="nav-menu" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#projects">Projects</a></li>
+          <li><a href="/#contact">Contact</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <article class="post">
+
+      <header class="post-header">
+        <h1>POST TITLE</h1>
+        <p class="post-meta">
+          <!-- datetime is YYYY-MM-DD for machines; the visible text is for people. Keep them in sync. -->
+          <time datetime="2026-01-01">January 1, 2026</time>
+        </p>
+      </header>
+
+      <!--
+        OPENING LINE — centered.
+        Use post-lead ONLY if the first paragraph is exactly ONE sentence.
+        Two sentences or more: delete this <p> and let the paragraph live in
+        .post-body below, left-aligned like the rest of the prose.
+        Sentence count is the whole test — a multi-sentence paragraph is never centered.
+      -->
+      <p class="post-lead">A single sentence that hooks the reader.</p>
+
+      <div class="post-body">
+
+        <!-- BODY — one <p> per paragraph. Left-aligned, no inline styles, no <br> for spacing. -->
+        <p>First body paragraph.</p>
+
+        <p>Second body paragraph. Use <strong>bold</strong> for the first mention of a key topic, and <a href="https://example.com">plain links</a> that read as words rather than raw URLs.</p>
+
+      </div>
+
+      <!--
+        HASHTAGS — kept separate from the post.
+        They are a list below the divider, never a line of text at the end of the prose.
+        One tag per <li>, lowercase, including the #.
+      -->
+      <ul class="post-tags" aria-label="Tags">
+        <li>#general</li>
+        <li>#example</li>
+      </ul>
+
+    </article>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2026 Benjamin Keil. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !expanded);
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
+  <!--
+    LAST STEP — a new post is not listed until you add it to blog/index.html.
+    Paste this inside <section class="blog-list">, newest post first:
+
+    <article class="blog-preview">
+      <h3>
+        <a href="POST-SLUG.html">POST TITLE</a>
+      </h3>
+
+      <p class="post-meta">January 1, 2026</p>
+
+      <p class="blog-excerpt">
+        Opening of the post. CSS clamps this to two lines, so no manual "..." needed.
+      </p>
+
+      <a class="read-more" href="POST-SLUG.html">Read more &rarr;</a>
+    </article>
+  -->
+
+</body>
+</html>
