@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Customized Cash Rewards Credit Card | Ben Keil</title>
+  <meta name="description" content="How a gimmicky, customizable cash back card became my favorite in my wallet — and inspired me to build Credit Card Cafe." />
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- Skip Link for Screen Readers -->
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="/" style="text-decoration: none; color: inherit;">
+          Ben Keil
+        </a>
+      </h1>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Toggle navigation menu"
+        aria-controls="nav-menu"
+        aria-expanded="false">
+        &#9776;
+      </button>
+
+      <nav id="nav-menu" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#projects">Projects</a></li>
+          <li><a href="/#contact">Contact</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <article class="post">
+
+      <header class="post-header">
+        <h1>Customized Cash Rewards Credit Card</h1>
+        <p class="post-meta">
+          <time datetime="2026-07-21">July 21, 2026</time>
+        </p>
+      </header>
+
+      <p class="post-lead">This one credit card launched one of my longest running obsessions.</p>
+
+      <div class="post-body">
+
+        <p>When I was 18, I really wanted a Credit Card. There was a certain idea in my head about owning a credit card. It was something adults had, it sounded more luxurious, “I’ll pay for this with my <em>Credit Card</em>.” Mostly, I wanted to experience the financial responsibility of having a credit card. People had warned me, credit cards put you into debt, credit cards steal money from you, credit cards are designed to make you poor. Really, they <em>might be</em>. Of this I have no explicit knowledge, but they’re pretty easy to understand as a financial tool. I ran to my bank and applied for one soon after I turned 18. The very kind associate who helped me apply for my first credit card took time during our meeting to explain everything to me: What an APR is, statement credit, why the balance is positive despite being <em>owed</em>. My only take away from this was, “Pay your monthly statement balance before it’s due, and you will never experience a problem.” - good advice for all.</p>
+
+        <p>Now this card I applied for no longer exists, it rather had transformed into the aforementioned card in the title. It was my first step into “the game”. I have spoken about credit cards being a game before to many people, and it’s this gamification that is the most attractive aspect of owning credit cards for me. The original card would offer a 10% bonus on my earned cash back if I deposited it into a checking or savings account at the same bank. The new version grandfathered in the 10% automatically for being a historic customer.</p>
+
+        <p>I could earn 3% cash back on a category of my choice. Gas stations, obviously. I was an 18 year old with a car. Then I could cash out my cash back with the 10% bonus, making my effective rate 3.3% cash back. Thus, the game has been played. I was a player, and I was ready to extract every cent of value I could.</p>
+
+        <p>Now this was great with the custom choice categories, I could switch once per month to something that I was going to spend more money on. I usually shifted between online shopping and gas stations, sometimes even using the restaurants category. Each choice allowing me to earn 3.3% in that category.</p>
+
+        <p>Then I learned about the game’s rules. You could increase this 10% bonus if you had enough total assets across any account within the bank’s jurisdiction. This included a financial institution which allowed opening a brokerage account. So if I saved enough and invested enough, I could hit a tier that allowed me to get a 25%, 50%, or 75% bonus on top of the 3%. This would increase the effective cash back rate to 3.75%, 4.5%, or 5.25% respectively. Now those numbers are insane. Up to 5.25% cash back on a category of your choice?</p>
+
+        <p>So yeah, a super gimmicky card, but it’s my favorite in my wallet. The option to customize your cash back category, and a cash back multiplier which inspires a savings / investment goal? Absolutely my thing. This gimmick is actually what inspired me to create <a href="https://creditcard.cafe">Credit Card Cafe</a>, as there was no service available that understood the niche differences in credit cards, and was able to map out the multipliers. If you check out the Customized Cash Rewards credit card on Credit Card Cafe, you can see the custom category choices and the cash back multipliers, named “modifiers”, at the bottom of the card page. These options actually allow you to change your version of the card across the platform. The configuration is yours, and it persists across the dashboard and card comparisons.</p>
+
+      </div>
+
+      <ul class="post-tags" aria-label="Tags">
+        <li>#creditcards</li>
+      </ul>
+
+    </article>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2026 Benjamin Keil. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !expanded);
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
